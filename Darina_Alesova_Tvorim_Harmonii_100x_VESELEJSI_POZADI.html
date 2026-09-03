@@ -843,6 +843,365 @@ html[data-theme="dark"] .gallery-card{background:#102a2b}
 .hp-field{position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;opacity:0!important}
 @media(max-width:640px){.contact-form-pro{padding:24px 18px}.form-grid{grid-template-columns:1fr;gap:16px}.field-full{grid-column:auto}.form-head h3{font-size:30px}.form-direct{flex-direction:column;align-items:center}.form-direct .dot{display:none}}
 
+
+/* =========================================================
+   VÝRAZNĚ VESELEJŠÍ POZADÍ
+   ========================================================= */
+
+/* Celá stránka */
+html:not([data-theme="dark"]) body{
+  background:
+    radial-gradient(circle at 0% 5%, rgba(255,174,201,.42) 0 12%, transparent 34%),
+    radial-gradient(circle at 100% 12%, rgba(113,211,200,.34) 0 12%, transparent 34%),
+    radial-gradient(circle at 80% 55%, rgba(255,211,116,.30) 0 11%, transparent 33%),
+    radial-gradient(circle at 10% 78%, rgba(188,164,232,.25) 0 11%, transparent 32%),
+    linear-gradient(180deg,#fff7f2 0%,#fffaf6 28%,#f4fbf8 58%,#fff7ef 100%) !important;
+  background-attachment:fixed !important;
+}
+
+/* Výrazné pastelové pozadí jednotlivých sekcí */
+html:not([data-theme="dark"]) .hero{
+  background:
+    radial-gradient(circle at 14% 35%,rgba(255,177,203,.28),transparent 34%),
+    radial-gradient(circle at 88% 30%,rgba(117,212,202,.25),transparent 32%),
+    linear-gradient(135deg,rgba(255,249,244,.92),rgba(248,255,252,.86)) !important;
+}
+
+html:not([data-theme="dark"]) #o-mne{
+  background:
+    radial-gradient(circle at 92% 15%,rgba(255,211,120,.25),transparent 30%),
+    linear-gradient(135deg,#fff2f6 0%,#fff9f3 52%,#effbf7 100%) !important;
+}
+
+html:not([data-theme="dark"]) .harmony-section{
+  background:
+    radial-gradient(circle at 10% 50%,rgba(241,154,188,.30),transparent 30%),
+    radial-gradient(circle at 88% 25%,rgba(108,204,194,.22),transparent 28%),
+    linear-gradient(135deg,#ffeef5 0%,#fff7e8 50%,#ecfaf6 100%) !important;
+}
+
+html:not([data-theme="dark"]) .experience{
+  background:
+    radial-gradient(circle at 15% 80%,rgba(255,205,111,.22),transparent 28%),
+    linear-gradient(135deg,#fffaf4,#f1fbf7) !important;
+}
+
+html:not([data-theme="dark"]) #nabidka{
+  background:
+    radial-gradient(circle at 85% 18%,rgba(200,169,234,.20),transparent 28%),
+    linear-gradient(135deg,#f7f1ff 0%,#fff9f1 48%,#eefaf7 100%) !important;
+}
+
+html:not([data-theme="dark"]) #akce{
+  background:
+    radial-gradient(circle at 8% 16%,rgba(255,174,201,.18),transparent 30%),
+    linear-gradient(135deg,#fff5f8,#fff9ec) !important;
+}
+
+html:not([data-theme="dark"]) .gallery-section{
+  background:
+    radial-gradient(circle at 92% 8%,rgba(111,209,199,.18),transparent 28%),
+    radial-gradient(circle at 10% 85%,rgba(255,207,111,.16),transparent 28%),
+    linear-gradient(135deg,#f5fffb 0%,#fff7f2 58%,#faf2ff 100%) !important;
+}
+
+html:not([data-theme="dark"]) .faq{
+  background:
+    radial-gradient(circle at 85% 12%,rgba(188,164,232,.17),transparent 29%),
+    linear-gradient(135deg,#faf4ff 0%,#f3fbf8 100%) !important;
+}
+
+/* Pranic Healing sekce zůstává tmavší, ale živější */
+html:not([data-theme="dark"]) .dark-band{
+  background:
+    radial-gradient(circle at 88% 15%,rgba(255,217,119,.27),transparent 28%),
+    radial-gradient(circle at 10% 80%,rgba(255,144,184,.17),transparent 28%),
+    linear-gradient(135deg,#2e8177 0%,#489a91 56%,#6bb7aa 100%) !important;
+}
+
+/* Citát */
+html:not([data-theme="dark"]) .quote-section:not(.quote-photo){
+  background:
+    radial-gradient(circle at 20% 20%,rgba(255,255,255,.40),transparent 22%),
+    linear-gradient(135deg,#f2a7bf 0%,#f8ca8c 48%,#9edfd1 100%) !important;
+}
+
+/* Kontakt */
+html:not([data-theme="dark"]) .contact{
+  background:
+    radial-gradient(circle at 13% 18%,rgba(255,219,122,.30),transparent 26%),
+    radial-gradient(circle at 90% 80%,rgba(246,149,183,.24),transparent 28%),
+    linear-gradient(135deg,#2b7d74 0%,#3d958a 52%,#62afa4 100%) !important;
+}
+
+/* Karty trochu více oddělit od pozadí */
+html:not([data-theme="dark"]) .offer-card,
+html:not([data-theme="dark"]) .testimonial-main,
+html:not([data-theme="dark"]) .testimonial-stack article,
+html:not([data-theme="dark"]) .event-showcase,
+html:not([data-theme="dark"]) .contact-form-pro{
+  box-shadow:0 18px 45px rgba(70,94,88,.13) !important;
+}
+
+/* Jemné "aury" přes celou stránku */
+body:before,
+body:after{
+  content:"";
+  position:fixed;
+  z-index:-1;
+  border-radius:50%;
+  pointer-events:none;
+  filter:blur(10px);
+}
+html:not([data-theme="dark"]) body:before{
+  width:420px;height:420px;
+  left:-180px;top:34%;
+  background:rgba(255,170,203,.18);
+}
+html:not([data-theme="dark"]) body:after{
+  width:460px;height:460px;
+  right:-220px;top:58%;
+  background:rgba(107,207,197,.18);
+}
+
+/* Tmavý režim – rovněž barevnější */
+html[data-theme="dark"] body{
+  background:
+    radial-gradient(circle at 0% 8%,rgba(197,94,139,.16),transparent 30%),
+    radial-gradient(circle at 100% 12%,rgba(70,151,144,.16),transparent 30%),
+    radial-gradient(circle at 80% 60%,rgba(189,148,66,.10),transparent 28%),
+    linear-gradient(180deg,#0b2224,#102b2d 56%,#0c2325) !important;
+  background-attachment:fixed!important;
+}
+html[data-theme="dark"] #o-mne,
+html[data-theme="dark"] .harmony-section,
+html[data-theme="dark"] .experience,
+html[data-theme="dark"] #nabidka,
+html[data-theme="dark"] #akce,
+html[data-theme="dark"] .gallery-section,
+html[data-theme="dark"] .faq{
+  background:linear-gradient(135deg,#102a2d,#153337)!important;
+}
+
+
+/* =========================================================
+   100x VESELEJŠÍ POZADÍ — pastel rainbow aura version
+   Mění hlavně pozadí, ne obsah.
+   ========================================================= */
+
+/* ---------- LIGHT MODE ---------- */
+html:not([data-theme="dark"]) body{
+  background:
+    radial-gradient(circle at 3% 6%, rgba(255,133,186,.55) 0 10%, rgba(255,133,186,0) 28%),
+    radial-gradient(circle at 98% 8%, rgba(98,222,211,.52) 0 10%, rgba(98,222,211,0) 28%),
+    radial-gradient(circle at 82% 30%, rgba(255,221,112,.45) 0 9%, rgba(255,221,112,0) 27%),
+    radial-gradient(circle at 18% 48%, rgba(195,166,255,.38) 0 8%, rgba(195,166,255,0) 25%),
+    radial-gradient(circle at 90% 72%, rgba(255,160,117,.30) 0 10%, rgba(255,160,117,0) 28%),
+    radial-gradient(circle at 8% 86%, rgba(145,232,197,.34) 0 9%, rgba(145,232,197,0) 28%),
+    linear-gradient(180deg,#fff7fb 0%,#fff8ee 24%,#f2fff9 48%,#f8f2ff 72%,#fff8f1 100%) !important;
+  background-attachment: fixed !important;
+  position:relative;
+}
+
+/* big happy auras across the page */
+html:not([data-theme="dark"]) body::before,
+html:not([data-theme="dark"]) body::after{
+  content:"";
+  position:fixed;
+  z-index:-1;
+  border-radius:50%;
+  pointer-events:none;
+  filter:blur(16px);
+  opacity:.95;
+}
+html:not([data-theme="dark"]) body::before{
+  width:620px;
+  height:620px;
+  left:-220px;
+  top:18%;
+  background:
+    radial-gradient(circle at 40% 35%, rgba(255,155,198,.34), transparent 42%),
+    radial-gradient(circle at 65% 60%, rgba(255,215,108,.22), transparent 44%),
+    radial-gradient(circle at 35% 68%, rgba(122,220,208,.20), transparent 40%);
+}
+html:not([data-theme="dark"]) body::after{
+  width:680px;
+  height:680px;
+  right:-260px;
+  top:48%;
+  background:
+    radial-gradient(circle at 52% 30%, rgba(111,214,203,.30), transparent 42%),
+    radial-gradient(circle at 38% 58%, rgba(199,170,255,.23), transparent 40%),
+    radial-gradient(circle at 62% 72%, rgba(255,181,125,.20), transparent 40%);
+}
+
+/* softer top bar tint */
+html:not([data-theme="dark"]) .topbar.scrolled{
+  background:rgba(255,249,244,.82) !important;
+  box-shadow:0 1px 0 rgba(230,150,180,.16) !important;
+}
+
+/* distinct cheerful backgrounds section by section */
+html:not([data-theme="dark"]) .hero{
+  background:
+    radial-gradient(circle at 12% 28%, rgba(255,164,199,.28), transparent 30%),
+    radial-gradient(circle at 88% 22%, rgba(114,218,208,.24), transparent 30%),
+    radial-gradient(circle at 60% 80%, rgba(255,223,120,.18), transparent 28%),
+    linear-gradient(135deg, rgba(255,248,251,.95), rgba(255,250,241,.95) 46%, rgba(242,255,249,.92)) !important;
+}
+
+html:not([data-theme="dark"]) #o-mne{
+  background:
+    radial-gradient(circle at 92% 16%, rgba(255,215,118,.26), transparent 30%),
+    radial-gradient(circle at 8% 78%, rgba(195,166,255,.18), transparent 26%),
+    linear-gradient(135deg,#fff1f8 0%,#fffaf2 50%,#eefcf7 100%) !important;
+}
+
+html:not([data-theme="dark"]) .harmony-section{
+  background:
+    radial-gradient(circle at 10% 45%, rgba(248,150,190,.30), transparent 31%),
+    radial-gradient(circle at 87% 25%, rgba(118,221,209,.22), transparent 29%),
+    linear-gradient(135deg,#ffeef8 0%,#fff7de 48%,#eafbf6 100%) !important;
+}
+
+html:not([data-theme="dark"]) .dark-band{
+  background:
+    radial-gradient(circle at 88% 14%, rgba(255,226,129,.28), transparent 28%),
+    radial-gradient(circle at 10% 82%, rgba(255,155,198,.16), transparent 28%),
+    radial-gradient(circle at 48% 50%, rgba(111,214,203,.12), transparent 34%),
+    linear-gradient(135deg,#3b9289 0%,#58ada3 55%,#79c5ba 100%) !important;
+}
+
+html:not([data-theme="dark"]) .experience{
+  background:
+    radial-gradient(circle at 16% 78%, rgba(255,210,111,.24), transparent 29%),
+    radial-gradient(circle at 88% 16%, rgba(255,173,197,.17), transparent 28%),
+    linear-gradient(135deg,#fffaf2,#eefcf7) !important;
+}
+
+html:not([data-theme="dark"]) #nabidka{
+  background:
+    radial-gradient(circle at 84% 18%, rgba(197,170,255,.20), transparent 29%),
+    radial-gradient(circle at 11% 84%, rgba(255,187,132,.14), transparent 28%),
+    linear-gradient(135deg,#f7f0ff 0%,#fffaf0 48%,#edfbf7 100%) !important;
+}
+
+html:not([data-theme="dark"]) #akce{
+  background:
+    radial-gradient(circle at 10% 16%, rgba(255,164,196,.20), transparent 31%),
+    radial-gradient(circle at 90% 80%, rgba(255,223,122,.14), transparent 30%),
+    linear-gradient(135deg,#fff4fa,#fffced) !important;
+}
+
+html:not([data-theme="dark"]) .quote-section:not(.quote-photo){
+  background:
+    radial-gradient(circle at 18% 18%, rgba(255,255,255,.35), transparent 20%),
+    linear-gradient(135deg,#f6a5c2 0%,#ffd58d 48%,#9fe2d5 100%) !important;
+}
+
+html:not([data-theme="dark"]) .gallery-section{
+  background:
+    radial-gradient(circle at 92% 8%, rgba(114,218,208,.20), transparent 29%),
+    radial-gradient(circle at 10% 86%, rgba(255,206,111,.18), transparent 29%),
+    radial-gradient(circle at 28% 18%, rgba(196,168,255,.12), transparent 25%),
+    linear-gradient(135deg,#f3fff9 0%,#fff7f1 58%,#faf1ff 100%) !important;
+}
+
+html:not([data-theme="dark"]) .faq{
+  background:
+    radial-gradient(circle at 87% 13%, rgba(196,168,255,.18), transparent 30%),
+    radial-gradient(circle at 12% 78%, rgba(255,178,205,.14), transparent 27%),
+    linear-gradient(135deg,#fbf3ff 0%,#f0fbf7 100%) !important;
+}
+
+html:not([data-theme="dark"]) .contact{
+  background:
+    radial-gradient(circle at 13% 18%, rgba(255,219,122,.34), transparent 27%),
+    radial-gradient(circle at 90% 80%, rgba(246,149,183,.26), transparent 29%),
+    radial-gradient(circle at 74% 18%, rgba(115,221,210,.16), transparent 26%),
+    linear-gradient(135deg,#31877e 0%,#4ca79b 55%,#72c0b4 100%) !important;
+}
+
+html:not([data-theme="dark"]) footer{
+  background:linear-gradient(135deg,#2c7b73,#3b9187) !important;
+}
+
+/* make white cards float more clearly off the vivid backgrounds */
+html:not([data-theme="dark"]) .offer-card,
+html:not([data-theme="dark"]) .testimonial-main,
+html:not([data-theme="dark"]) .testimonial-stack article,
+html:not([data-theme="dark"]) .event-showcase,
+html:not([data-theme="dark"]) .gallery-card,
+html:not([data-theme="dark"]) .contact-form-pro,
+html:not([data-theme="dark"]) .faq-list,
+html:not([data-theme="dark"]) .reference-grid article{
+  box-shadow:0 20px 50px rgba(105,122,118,.14) !important;
+}
+
+/* ---------- DARK MODE ---------- */
+html[data-theme="dark"] body{
+  background:
+    radial-gradient(circle at 4% 8%, rgba(220,104,155,.18) 0 10%, transparent 28%),
+    radial-gradient(circle at 97% 10%, rgba(78,180,174,.18) 0 10%, transparent 28%),
+    radial-gradient(circle at 84% 58%, rgba(220,174,79,.12) 0 10%, transparent 28%),
+    linear-gradient(180deg,#0c2427 0%,#102d30 55%,#0d2527 100%) !important;
+  background-attachment:fixed !important;
+}
+html[data-theme="dark"] #o-mne,
+html[data-theme="dark"] .harmony-section,
+html[data-theme="dark"] .experience,
+html[data-theme="dark"] #nabidka,
+html[data-theme="dark"] #akce,
+html[data-theme="dark"] .gallery-section,
+html[data-theme="dark"] .faq{
+  background:
+    linear-gradient(135deg,#132f32,#17383a) !important;
+}
+html[data-theme="dark"] .dark-band{
+  background:
+    radial-gradient(circle at 88% 15%, rgba(240,188,92,.16), transparent 28%),
+    radial-gradient(circle at 12% 82%, rgba(231,118,161,.12), transparent 28%),
+    linear-gradient(135deg,#1e5651,#276660) !important;
+}
+html[data-theme="dark"] .contact{
+  background:
+    radial-gradient(circle at 14% 18%, rgba(235,189,97,.18), transparent 26%),
+    radial-gradient(circle at 90% 82%, rgba(230,113,155,.12), transparent 28%),
+    linear-gradient(135deg,#184744,#23605b) !important;
+}
+html[data-theme="dark"] footer{
+  background:linear-gradient(135deg,#153b3b,#1d4b49) !important;
+}
+
+/* optional gentle glow in hero area */
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:auto auto 6% 50%;
+  transform:translateX(-50%);
+  width:520px;
+  height:160px;
+  border-radius:50%;
+  background:radial-gradient(circle, rgba(255,225,148,.12), transparent 65%);
+  pointer-events:none;
+}
+
+/* mobile adjustments */
+@media(max-width:640px){
+  html:not([data-theme="dark"]) body::before{
+    width:340px;
+    height:340px;
+    left:-120px;
+    top:24%;
+  }
+  html:not([data-theme="dark"]) body::after{
+    width:380px;
+    height:380px;
+    right:-160px;
+    top:62%;
+  }
+}
+
 </style>
 </head>
 <body>
